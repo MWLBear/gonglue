@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+		<title>热血霸业</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="MobileOptimized" content="240">
+		<meta name="Iphone-content" content="320">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<style type="text/css">
+			html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{ margin: 0; padding: 0; outline: 0 none; }
+			body{
+				/* overflow:hidden; */
+				font-family: PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif,"微软雅黑";
+			}
+			ul,li{
+	            list-style: none;
+	        }
+
+			.page{
+				position: relative;
+				max-width:720px;
+				width: 100%;
+				margin:auto;
+			}
+			.img1{
+				width:100%;
+			}
+			.website{
+				position: absolute;
+			    width: 44%;
+			    height: 5%;
+			    top: 15%;
+
+			}
+			.website1{
+				left: 4%;
+			}
+			.website2{
+				left: 52%;
+			}
+			.game{
+				position: absolute;
+			    width: 29%;
+			    height: 5.2%;
+			    top: 14.3%;
+			}
+			.career1{
+				left: 4%;
+			}
+			.career2{
+				left: 36%;
+			}
+			.career3{
+				left: 67%;
+			}
+			.game2{
+				position: absolute;
+			    width: 45%;
+			    height: 5.3%;
+			    top: 23.8%;
+			}
+			.strategy1{
+				left: 3.6%;
+			}
+			.strategy2{
+				left:51.6%;
+			}
+			.page .strategy3{
+				left: 3.6%;
+				top:30.2%;
+			}
+			.page .strategy4{
+				left:51.6%;
+				top:30.2%;
+			}
+			.Boutique{
+				position: absolute;
+			    width: 45%;
+			    height: 4%;
+			    top:39.7%;
+
+			}
+			.video1{
+				left: 3.6%;
+			}
+			.video2{
+				left: 51.6%;
+			}
+			.Powerful{
+				position: absolute;
+			    width: 28%;
+			    height: 7.7%;
+			    top: 48.2%;
+			}
+			.boss1{
+				left: 4%;
+			}
+			.boss2{
+				left: 36%;
+			}
+			.boss3{
+				left:68%;
+			}
+			.Powerful2{
+				position: absolute;
+			    width: 28%;
+			    height: 7.6%;
+			    top: 56.9%;
+			}
+			.Elegant{
+				position: absolute;
+			    width: 28%;
+			    height: 6%;
+			    top: 68.9%;
+			}
+			.maps1{
+				left: 4%;
+			}
+			.maps2{
+				left: 36%;
+			}
+			.maps3{
+				left: 68%;
+			}
+			.Rare{
+				position: absolute;
+			    width: 28%;
+			    height: 7.6%;
+			    top: 79.1%;
+			}
+			.weapon1{
+				left: 4%;
+			}
+			.weapon2{
+				left: 36%;
+			}
+			.weapon3{
+				left: 68%;
+			}
+			.best{
+				position: absolute;
+			    width: 28%;
+			    height: 8%;
+			    top: 90.9%;
+			    left: 4%;
+			}
+			.ring1{
+				left: 4%;
+			}
+			.ring2{
+				left: 36%;
+			}
+			.ring3{
+				left: 68%;
+			}
+			.center{
+				position:relative;
+			}
+			.details {
+				-webkit-animation: animatename 0.5s;
+				animation: animatename 0.5s;
+				position:relative;
+				z-index:103;
+			}
+			.strategy_mask{
+				-webkit-animation: animatename 0.5s;
+				animation: animatename 0.5s;
+				overflow-y: auto;
+				position:relative;
+				z-index:100;
+
+			}
+			/* 进场 */
+			@keyframes animatename {
+				0% {
+					/* opacity: 0; */
+					-webkit-transform: translateX(100%);
+					-ms-transform: translateX(100%);
+					transform: translateX(100%);
+				}
+				100% {
+					/* opacity: 1; */
+					-webkit-transform: translateX(0%);
+					-ms-transform: translateX(0%);
+					transform: translateX(0%);
+				}
+			}
+			.details{
+				position:absolute;
+				top:0;
+				left:0;
+				background:white;
+				width:100%;
+				/* height:100%; */
+				display: none;
+			}
+			.strategy_mask{
+				position:absolute;
+				top:0;
+				left:0;
+				background:white;
+				width:100%;
+				/* height:100%; */
+				display: none;
+			}
+			@media screen and (min-width:720px){
+	             html{font-size:21px;}
+	        }
+	        @media screen and (max-width:720px) and (min-width:640px){
+	            html{font-size:18px;}
+	        }
+	        @media screen and (max-width:639px) and (min-width:480px){
+	            html{font-size:17px;}
+
+	        }
+	        @media screen and (max-width:479px) and (min-width:421px){
+	            html{font-size:16px;}
+	        }
+	        @media screen and (max-width:420px) and (min-width:361px){
+	            html{font-size:15px;}
+	        }
+	        @media screen and (max-width:360px) and (min-width:321px){
+	            html{font-size:14px;}
+
+	        }
+	        @media screen and (max-width:320px){
+	            html{font-size:13px;}
+	        }
+	        .nav{
+	        	padding-top: 1.5rem;
+	        	width:100%;
+	        	position:relative;
+	        	text-align: center;
+	        	background: #F6F7F9;
+	        }
+	        .strategy_nav{
+	        	padding-top: 1.5rem;
+	        	width:100%;
+	        	position:relative;
+	        	text-align: center;
+	        	background: #F6F7F9;
+	        }
+	        .returnNav{
+	        	position: fixed;
+			    display: flex;
+			    width: 100%;
+			    /* left: 10px; */
+			    height: 3.5rem;
+			    line-height: 3.5rem;
+			    background: #F6F7F9;
+			    border-bottom: 1px solid #D4D4D4;
+			    text-align: center;
+			    z-index: 10;
+			    padding-top: 1.5rem;
+			    top: 0;
+
+	        }
+	        .strategyNav{
+	        	position: fixed;
+			    display: flex;
+			    width: 100%;
+			    /* left: 10px; */
+			    height: 3.5rem;
+			    line-height: 3.5rem;
+			    background: #F6F7F9;
+			    border-bottom: 1px solid #D4D4D4;
+			    text-align: center;
+			    z-index: 10;
+			    top: 0;
+			    padding-top: 1.5rem;
+	        }
+	        .fa_left{
+				font-size: 2.8rem;
+			    height: 3.5rem;
+			    line-height: 3.5rem;
+			    margin-left: 14px;
+	        }
+	        .nav_name{
+	        	font-size: 1.25rem;
+	        }
+	        .strategyNav_txt{
+	        	font-size: 1.25rem;
+			    /* padding-top: 0.57rem; */
+			    padding-left: 6px;
+	        }
+	        .nav_txt{
+				font-size: 1.25rem;
+			    /* padding-top: 0.57rem; */
+			    padding-left: 6px;
+	        }
+	        .fl{
+	        	float: left;
+	        }
+	        .clear{
+	        	clear:both;
+	        }
+	        .nav_tlt{
+				margin: auto;
+			    position: absolute;
+			    left: 0;
+			    width: 50%;
+			    left: 50%;
+			    margin-left: -25%;
+			    font-size: 1.25rem;
+	        }
+	        .nav_center,.strategy_center{
+	        	position:relative;
+	        	margin-top: 3.5rem;
+    			background: white;
+	        }
+	        .nav_center,.strategy_center img,video{
+	        	width:100%;
+	        	border-radius: 6px;
+	        }
+	        .strategy_center{
+	        	padding:0 1.2rem 0 1.2rem;
+	        	letter-spacing: 1px;
+	        }
+	        .mask{
+				position: fixed;
+			    width: 100%;
+			    height: 100%;
+			    background: rgba(0,0,0,.5) none repeat;
+			    top: 0;
+			    z-index: 102;
+			    display:none;
+	        }
+	        .videoPlay{
+				position: fixed;
+			    width: 100%;
+			    top: 32%;
+			    z-index: 103;
+	        }
+	        .nav_list{
+	        	padding:1.5rem 1.2rem 1.2rem 1.2rem;
+	        }
+	        .nav_list img{width:100%;}
+	        .nav_list p{
+	        	padding: 2% 0;
+    			text-align: left;
+    			line-height:2rem;
+    			color:#666;
+	        }
+	        .nav_list .color_y{
+	        	color:#FF8800;
+	        }
+	        .strategy_list{
+				/* height:6rem; */
+				/* border-bottom:1px solid #E5E5E5; */
+				text-align:left;
+	        }
+	        .list_li{
+	        	border-bottom:1px solid #E5E5E5;
+	        }
+	        .list_li p{
+				font-size: 0.8rem;
+    			color: #989898;
+    			margin-top: 0.7rem;
+    			padding-bottom: 1.2rem;
+    			text-indent: 10px;
+	        }
+	        .nav_center li{
+   				padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+	        }
+	        .nav_center li p{
+				padding: 2% 0;
+			    text-align: left;
+			    line-height: 2rem;
+			    color: #666;
+	        }
+	        .list_li_tlt{
+        	    font-size: 1.1rem;
+				padding-top: 1.2rem;
+	        }
+	        .nav_list,.nav_center .color6{
+	        	color: #000;
+    			font-weight: 800;
+	        }
+	        .nav_list,.nav_center .color_r{
+	        	color: #E60000;
+	        }
+	        .nav_list,.nav_center .color_b{
+	        	color: #337FE5;
+	        }
+	        .gameOneImg{
+	        	position: absolute;
+			    width: 100%;
+			    height: 7.7%;
+			    top: 2.9%;
+			    left: 0;
+	        }
+	        .title{
+	        	position:fixed;
+	        	width:100%;
+	        	top:0;
+	        	background:#F3EFE4;
+	        	left:0;
+	        	text-align:center;
+	        	font-size: 1rem;
+			    padding: 2.5% 0;
+			    display:none;
+			    font-weight: 800;
+	        }
+	        .nav_center li{
+	        	display:none;
+	        }
+		</style>
+    </head>
+    <body>
+    	<div class="page" id="app">
+    		<div class="center">
+				<img class="img1" src="images/1.jpg" alt="" />
+				<div class="title">热血霸业-攻略大全</div>
+				<!-- 首图 -->
+				<div class="gameOneImg"></div>
+				<!-- 游戏职业 -->
+				<div class="game career1" data-name="战士"></div>
+				<div class="game career2" data-name="法师"></div>
+				<div class="game career3" data-name="道士"></div>
+				<!-- 游戏攻略 -->
+				<div class="game2 strategy1" data-name="最新攻略"></div>
+				<div class="game2 strategy2" data-name="热门攻略"></div>
+				<div class="game2 strategy3" data-name="官方攻略"></div>
+				<div class="game2 strategy4" data-name="大神攻略"></div>
+				<!-- 精品视频 -->
+				<div class="Boutique video1"></div>
+				<div class="Boutique video2"></div>
+				<!-- 强力boss -->
+				<div class="Powerful boss1 bossImg1" data-name="祖玛教主"></div>
+				<div class="Powerful boss2 bossImg2" data-name="双头血魔"></div>
+				<div class="Powerful boss3 bossImg3" data-name="双头金刚"></div>
+				<div class="Powerful2 boss1 bossImg4" data-name="尸王"></div>
+				<div class="Powerful2 boss2 bossImg5" data-name="魔龙教主"></div>
+				<div class="Powerful2 boss3 bossImg6" data-name="半兽勇士"></div>
+				<!-- 精美地图 -->
+				<div class="Elegant maps1"></div>
+				<div class="Elegant maps2"></div>
+				<div class="Elegant maps3"></div>
+				<!-- 绝世神兵 -->
+				<div class="Rare weapon1"></div>
+				<div class="Rare weapon2"></div>
+				<div class="Rare weapon3"></div>
+				<!-- 极品神戒 -->
+				<div class="best ring1"></div>
+				<div class="best ring2"></div>
+				<div class="best ring3"></div>
+			</div>
+			<div class="mask"></div>
+			<div class="videoPlay"></div>
+			<!-- 攻略列表弹框 -->
+			<div class="strategy_mask">
+				<div class="strategy_nav">
+					<div class="strategyNav">
+						<div class="fl strategy_return">
+							<i class="fl fa fa-angle-left fa-lg  fa_left"></i>
+							<div class="fl strategyNav_txt">热门攻略</div>
+						</div>
+						<div class="clear"></div>
+						<div class="nav_tlt">职业人</div>
+					</div>
+					<div class="strategy_center">
+						<ul class="strategy_list">
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 弹框 -->
+			<div class="details">
+				<div class="nav">
+					<div class="returnNav">
+						<div class="fl returnPage">
+							<i class="fl fa fa-angle-left fa-lg  fa_left"></i>
+							<div class="fl nav_txt">热血霸业</div>
+						</div>
+						<div class="clear"></div>
+						<div class="nav_tlt">职业人</div>
+					</div>
+					<div class="nav_center">
+						<div class="nav_list">
+						</div>
+					</div>
+				</div>
+			</div>
+    	</div>
+    </body>
+    <script src="https://d.apps.yayawan.com/static/pages/template/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/index.js" type="text/javascript" charset="utf-8" ></script>
+    <script type="text/javascript" >
+    $(function(){
+    	$(window).scroll(function() {
+    		var scrollTop = window.pageYOffset||document.documentElement.scrollTop || document.body.scrollTop;
+    		data_scrollTop = scrollTop;
+    		var gameOneImg = $(".gameOneImg").offset().top;
+    		if(scrollTop >= gameOneImg){
+    			$(".title").css("display","block")
+    		}else{
+    			$(".title").css("display","none")
+    		}
+    	})
+    	var data_scrollTop = '';
+    	var page_scrollTop = '';
+    	function play(){
+    		var videoEle = document.getElementById("videoPlay1");
+    		videoEle.play();
+    	}
+    	function pausePlay(){
+    		var videoEle = document.getElementById("videoPlay1");
+			videoEle.pause();
+
+		}
+    	// 视频
+    	function myvideo (src,number){
+    		$(".mask").css("display","block")
+    		// $(".nav_tlt").text('精彩视频')
+    		// $(".details").css("display","block");
+	        // $(".details .nav_center .nav_list img").remove();
+	        // $(".details .nav_center .nav_list video").remove();
+    		var data = '';
+	        	data += '<video id="videoPlay1" webkit-playsinline="true"playsinline="true" preload  loop="loop"controls="controls" muted>'
+			 	data +=		'<source -webkit-playsinline="true" src="'+src+'">'
+	         	data +='</video>'
+	        $(".videoPlay").append(data);
+	        play();
+    	}
+    	// 打开视频1
+    	$(".video1").click(function(){
+	        var src = './videos/2019051301.mp4'
+	        myvideo(src);
+
+    	})
+    	// 打开视频2
+    	$(".video2").click(function(){
+	        var src = './videos/2019051302.mp4'
+	        myvideo(src)
+    	})
+    	$(".mask").click(function(){
+    		$(".videoPlay video").remove()
+    		$(".mask").css("display","none")
+    	})
+		//返回
+		$('.returnPage').click(function(){
+			console.log('000')
+			clearInterval(time)
+			var scrollTop2 = localStorage.getItem('scrollTop');
+			if(page == true){
+
+				console.log('11')
+				$(".strategy_mask").css("display","block");
+				$(".strategy_mask").css("animation","auto")
+				var scrollTop2 = localStorage.getItem('scrollTop');
+		            $(window).scrollTop(scrollTop2)
+				$(".details").animate({left:'100%'},"500",function(){
+		            $(".details").css("display","none");
+		            $(".details").animate({left:'0%'})
+		            $(".details .nav_center .nav_list img").remove();
+		            $(".nav_list p").remove();
+
+	            });
+			}else{
+				console.log('22')
+				// $(".strategy_mask").css("display","block");
+				$(".details").animate({left:'100%'},"500",function(){
+		            $(".details").css("display","none");
+		            $(".details").animate({left:'0%'})
+		            $(".details .nav_center .nav_list img").remove();
+		            $(".nav_center li").css("display","none");
+		            $(".nav_list p").remove();
+		            $(".center").css("display","block");
+		            var scrollTop2 = localStorage.getItem('scrollTop');
+		            $(window).scrollTop(scrollTop2)
+	            });
+	            // scrollTop = page_scrollTop;
+            }
+			// var scrollTop2 = localStorage.getItem('scrollTop');
+			// console.log('000')
+				// $(window).scrollTop(400)
+			// console.log($(window).scrollTop())
+		})
+		// 战士
+		$(".career1").click(function(){
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			$(".nav_tlt").text('战士职业')
+			// $(".details").css("overflow-y","auto")
+			$(".details .nav_center .nav_list img").remove();
+			var data = '';
+				data += '<img src="images/z1.png" alt="" />'
+				data += '<p>战士：极致攻防，近身厮杀一击致命。</p>'
+				data += '<p>战神一族有着十分悠久的历史，从最初的人魔大战到后来的各种大大小小的<span class="color_y">战争</span>当中，战士都扮演着十分重要的<span class="color_y">角色</span>。作为战斗当中的冲锋者，战士敢于迎接一切来自正面的挑战。经过在恶劣自然环境中的不断磨练，战士拥有一般人无法比拟的强悍体质，强健的体魄和坚毅的性格使得战士能够轻松应对任何严酷的作战环境。同时，战士也有着极高的防御能力与血量，能够抵抗来自任何怪物的攻击。作为近战物理攻击职业，战士的攻击方式可以用简单粗暴来形容。通过对于各种强力刀法、剑法的熟练运用，在近身<span class="color_y">格斗</span>当中战士能够给对手造成强大的压迫力。"刺杀剑术"、"烈火剑法"等作为战士的核心技能，让战士在与敌人的<span class="color_y">对战</span>当中具有极强的威慑力，可对单体目标造成大量伤害。"逐日剑法"、"野蛮冲撞”等技能的运用，让原本只擅长近战的战士在面对远程攻击职业时也能够轻松应对。</p>'
+			$(".nav_list").append(data);
+			$(".details").css("display","block")
+			$(".center").css("display","none")
+		})
+		// 法师
+		$(".career2").click(function(){
+			$(".nav_tlt").text('法师职业')
+			console.log(data_scrollTop)
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			// $(".details").css("overflow-y","auto")
+			$(".details .nav_center .nav_list img").remove();
+			var data = '';
+				data += '<img src="images/z2.png" alt="" />'
+				data += '<p>法师：逆天伤害，掌控冰雷<span class="color_y">暴力</span>输出。</p>'
+				data += '<p>能够轻松掌控火焰、寒冰、雷电等自然之力的法神一族，在各种战斗当中有着十分重要的地位。得到上天眷顾的法师可以掌控多种强大的元素之力，对抗怪物游刃有余。看似无敌的伤害能力并不能抹去法师防低血少的缺憾。尽管拥有魔法盾来抵抗伤害，法师仍不能以肉体迎接来自敌人的攻击。在战斗过程当中法师需要用风骚的走位规避来自敌人的各种伤害，同时伺机释放强大的魔法来给予敌人致命一击。法师作为远程攻击职业，有着十分强大的伤害输出能力。通过对"闪电术"、"冰咆哮"的合理应用，可以让法师在短时间内释放出逆天的伤害。"魔法盾"、"抗拒火环"等技能让原本脆弱的法师能够在一定程度上抵抗来自敌人的攻击，配合高超的操作与合理的走位可以进一步提升法师在战斗当中的生存能力。</p>'
+			$(".nav_list").append(data);
+			$(".details").css("display","block")
+			$(".center").css("display","none")
+		})
+		// 道士
+		$(".career3").click(function(){
+			$(".nav_tlt").text('道士职业')
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			// $(".details").css("overflow-y","auto")
+			$(".details .nav_center .nav_list img").remove();
+			var data = '';
+				data += '<img src="images/z3.png" alt="" />'
+				data += '<p>道士：杀戮神兽，众多道术变幻莫测。</p>'
+				data += '<p>精通通灵之术的道士能够召唤强力神兽作为帮手，强悍的神兽让道士可以轻松应对各种危险的怪物，甚至能够单独面对来自凶猛BOSS的挑战。通过对于天地之理的研究，道士熟知各种治愈、攻击和防御手段，全能的道士深得团队当中其他人的尊敬。众多种类的道术让道士可以在战斗当中拥有较强的生存力与持久力，强大的施毒术使得道士在PK当中不能被小视。道士作为能够控制召唤兽的远程职业，拥有其他职业所不具备的独有优势。通过运用"治愈术"、"幽灵盾"等各种辅助技能，道士能够提供给队友强大的增益状态，保护队友不被敌人伤害。"灵魂火符"、"施毒术"等多种道术的搭配使用也使道士在战斗当中变化多端，难以预测。作为团队当中的强力后盾，道士起着十分关键的作用。</p>'
+			$(".nav_list").append(data);
+			$(".details").css("display","block")
+			$(".center").css("display","none")
+		})
+		// 首图
+		$(".gameOneImg").click(function(){
+			$(".nav_tlt").text('攻略大全')
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			// $(".details").css("overflow-y","auto")
+			$(".details .nav_center .nav_list img").remove();
+			$(".nav_list").append(dataOne);
+			$(".details").css("display","block")
+			$(".center").css("display","none")
+		})
+		// 大神攻略
+		var num = [
+			{name:"《热血霸业》boss首杀",time:'2019年5月13日'},
+			{name:"《热血霸业》篝火争夺",time:'2019年5月13日'},
+			{name:"《热血霸业》开局攻略",time:'2019年5月13日'},
+			{name:"《热血霸业》内功升级",time:'2019年5月13日'},
+			{name:"《热血霸业》七日登录",time:'2019年5月13日'},
+			{name:"《热血霸业》泉水采集",time:'2019年5月13日'},
+			{name:"《热血霸业》入门必看",time:'2019年5月13日'},
+			{name:"《热血霸业》沙城boss",time:'2019年5月13日'},
+			{name:"《热血霸业》世界领主",time:'2019年5月13日'},
+			{name:"《热血霸业》卧龙山庄",time:'2019年5月13日'},
+			{name:"《热血霸业》野外PK",time:'2019年5月13日'},
+			{name:"《热血霸业》祖玛教主",time:'2019年5月13日'},
+		]
+		// 最新攻略
+		var num2 = [
+			{name:"《热血霸业》锁妖塔",time:'2019年5月13日'},
+			{name:"《热血霸业》之宝石系统",time:'2019年5月13日'},
+			{name:"《热血霸业》之背包系统",time:'2019年5月13日'},
+			{name:"《热血霸业》之魂珠系统",time:'2019年5月13日'},
+			{name:"《热血霸业》之极限挑战",time:'2019年5月13日'},
+			{name:"《热血霸业》之六道轮回",time:'2019年5月13日'},
+			{name:"《热血霸业》之人在塔在",time:'2019年5月13日'},
+			{name:"《热血霸业》之神兽系统",time:'2019年5月13日'},
+			{name:"《热血霸业》之天降珍宝",time:'2019年5月13日'},
+			{name:"《热血霸业》装备强化",time:'2019年5月13日'},
+			{name:"《热血霸业》装备神铸",time:'2019年5月13日'},
+			{name:"《热血霸业》神装挑战",time:'2019年5月13日'},
+			{name:"《热血霸业》无双大战",time:'2019年5月13日'},
+			{name:"《热血霸业》竞技场",time:'2019年5月13日'},
+		]
+		// 热门攻略
+		var num3 = [
+			{name:"《热血霸业》比武岛争锋",time:'2019年5月13日'},
+			{name:"《热血霸业》大宴群雄",time:'2019年5月13日'},
+			{name:"《热血霸业》封禁之地",time:'2019年5月13日'},
+			{name:"《热血霸业》技能攻略",time:'2019年5月13日'},
+			{name:"《热血霸业》神盾攻略",time:'2019年5月13日'},
+			{name:"《热血霸业》尸王殿",time:'2019年5月13日'},
+			{name:"《热血霸业》之宝石攻略",time:'2019年5月13日'},
+			{name:"《热血霸业》之地宫玩法",time:'2019年5月13日'},
+			{name:"《热血霸业》之挖矿寻宝",time:'2019年5月13日'},
+			{name:"《热血霸业》之装备升品",time:'2019年5月13日'},
+			{name:"《热血霸业》之装备洗练",time:'2019年5月13日'},
+			{name:"《热血霸业》神魂攻略",time:'2019年5月13日'},
+			{name:"《热血霸业》武魂攻略",time:'2019年5月13日'},
+			{name:"《热血霸业》天宫挑战",time:'2019年5月13日'},
+			{name:"《热血霸业》跨服3V3",time:'2019年5月13日'},
+		]
+		// 热门攻略
+		var num4 = [
+			{name:"《热血霸业》帮会系统",time:'2019年5月13日'},
+			{name:"《热血霸业》宝石系统",time:'2019年5月13日'},
+			{name:"《热血霸业》富甲天下",time:'2019年5月13日'},
+			{name:"《热血霸业》江湖称号",time:'2019年5月13日'},
+			{name:"《热血霸业》交易系统",time:'2019年5月13日'},
+			{name:"《热血霸业》聊天系统",time:'2019年5月13日'},
+			{name:"《热血霸业》轮回道法",time:'2019年5月13日'},
+			{name:"《热血霸业》社交系统",time:'2019年5月13日'},
+			{name:"《热血霸业》神器攻略",time:'2019年5月13日'},
+			{name:"《热血霸业》世界boss",time:'2019年5月13日'},
+			{name:"《热血霸业》特戒系统",time:'2019年5月13日'},
+			{name:"《热血霸业》装备投保",time:'2019年5月13日'},
+		]
+
+		// 攻略
+		function gameSkills (num){
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			// $(".nav_tlt").text('大神攻略')
+			$(".strategy_mask").css("display","block")
+			$(".center").css("display","none")
+			for (var i=0;i<num.length;i++){
+				var data = '';
+					data+='<li class="list_li" data-id="'+i+'">'
+					data+=	'<div class="list_li_tlt" >'+num[i].name+'</div>'
+					data+=	'<p>'+num[i].time+'</p>'
+					data+='</li>'
+				$(".strategy_list").append(data);
+			}
+		}
+		var game_id = '';
+		//大神攻略
+		$(".strategy4").click(function(){
+			game_id = '4';
+			$(".nav_tlt").text('大神攻略')
+			gameSkills(num);
+
+		})
+		//最新攻略
+		$(".strategy1").click(function(){
+			$(".nav_tlt").text('最新攻略')
+			game_id = '1';
+			gameSkills(num2);
+		})
+		//热门攻略
+		$(".strategy2").click(function(){
+			$(".nav_tlt").text('热门攻略')
+			game_id = '2';
+			gameSkills(num3);
+		})
+		//官方攻略
+		$(".strategy3").click(function(){
+			$(".nav_tlt").text('官方攻略')
+			game_id = '3';
+			gameSkills(num4);
+		})
+		var page = false;
+		$('.strategy_list').on('click','.list_li',function(){
+			page = true;
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			// $(".strategy_mask").css("animation-name","animatename")
+			// $(".strategy_mask").css("animation-duration","8s")
+			// var data = $(".details").scrollTop();
+			// data = 0+'px';
+			$(".details").css("display","block")
+			$(".strategy_mask").css("display","none")
+			$(".center").css("display","none")
+			$(".details .nav_center .nav_list img").remove();
+			$(".nav_list p").remove();
+			//大神攻略
+			if(game_id == '4'){
+				if($(this).attr('data-id')=='0'){
+					$(".nav_list").append(data);
+				}else if($(this).attr('data-id')=='1' ){
+					$(".nav_list").append(data1);
+				}else if($(this).attr('data-id')=='2' ){
+					$(".nav_list").append(data2);
+				}else if($(this).attr('data-id')=='3' ){
+					$(".nav_list").append(data3);
+				}else if($(this).attr('data-id')=='4' ){
+					$(".nav_list").append(data4);
+				}else if($(this).attr('data-id')=='5'){
+					$(".nav_list").append(data5);
+				}else if($(this).attr('data-id')=='6' ){
+					$(".nav_list").append(data6);
+				}else if($(this).attr('data-id')=='7' ){
+					$(".nav_list").append(data7);
+				}else if($(this).attr('data-id')=='8' ){
+					$(".nav_list").append(data8);
+				}else if($(this).attr('data-id')=='9' ){
+					$(".nav_list").append(data9);
+				}else if($(this).attr('data-id')=='10' ){
+					$(".nav_list").append(data10);
+				}else if($(this).attr('data-id')=='11' ){
+					$(".nav_list").append(data11);
+				}
+			}else if(game_id == '1'){
+				if($(this).attr('data-id')=='0'){
+					$(".nav_list").append(data21);
+				}else if($(this).attr('data-id')=='1' ){
+					$(".nav_list").append(data22);
+				}else if($(this).attr('data-id')=='2' ){
+					$(".nav_list").append(data23);
+				}else if($(this).attr('data-id')=='3' ){
+					$(".nav_list").append(data24);
+				}else if($(this).attr('data-id')=='4' ){
+					$(".nav_list").append(data25);
+				}else if($(this).attr('data-id')=='5' ){
+					$(".nav_list").append(data26);
+				}else if($(this).attr('data-id')=='6' ){
+					$(".nav_list").append(data27);
+				}else if($(this).attr('data-id')=='7' ){
+					$(".nav_list").append(data28);
+				}else if($(this).attr('data-id')=='8'){
+					$(".nav_list").append(data29);
+				}else if($(this).attr('data-id')=='9'){
+					$(".nav_list").append(data30);
+				}else if($(this).attr('data-id')=='10' ){
+					$(".nav_list").append(data31);
+				}else if($(this).attr('data-id')=='11'){
+					$(".nav_list").append(data29);
+				}else if($(this).attr('data-id')=='12' ){
+					$(".nav_list").append(data25);
+				}else if($(this).attr('data-id')=='13' ){
+					$(".nav_list").append(data23);
+				}
+			}else if(game_id == '2'){
+				if($(this).attr('data-id')=='0'){
+					$(".nav_list").append(data51);
+				}else if($(this).attr('data-id')=='1' ){
+					$(".nav_list").append(data52);
+				}else if($(this).attr('data-id')=='2' ){
+					$(".nav_list").append(data53);
+				}else if($(this).attr('data-id')=='3' ){
+					$(".nav_list").append(data54);
+				}else if($(this).attr('data-id')=='4' ){
+					$(".nav_list").append(data55);
+				}else if($(this).attr('data-id')=='5' ){
+					$(".nav_list").append(data56);
+				}else if($(this).attr('data-id')=='6' ){
+					$(".nav_list").append(data59);
+				}else if($(this).attr('data-id')=='7' ){
+					$(".nav_list").append(data57);
+				}else if($(this).attr('data-id')=='8' ){
+					$(".nav_list").append(data58);
+				}else if($(this).attr('data-id')=='9' ){
+					$(".nav_list").append(data60);
+				}else if($(this).attr('data-id')=='10' ){
+					$(".nav_list").append(data61);
+				}else if($(this).attr('data-id')=='11' ){
+					$(".nav_list").append(data55);
+				}else if($(this).attr('data-id')=='12' ){
+					$(".nav_list").append(data58);
+				}else if($(this).attr('data-id')=='13' ){
+					$(".nav_list").append(data54);
+				}else if($(this).attr('data-id')=='14' ){
+					$(".nav_list").append(data60);
+				}
+			}else{
+				if($(this).attr('data-id')=='0'){
+					$(".nav_list").append(data81);
+				}else if($(this).attr('data-id')=='1' ){
+					$(".nav_list").append(data82);
+				}else if($(this).attr('data-id')=='2' ){
+					$(".nav_list").append(data83);
+				}else if($(this).attr('data-id')=='3' ){
+					$(".nav_list").append(data84);
+				}else if($(this).attr('data-id')=='4' ){
+					$(".nav_list").append(data85);
+				}else if($(this).attr('data-id')=='5' ){
+					$(".nav_list").append(data86);
+				}else if($(this).attr('data-id')=='6' ){
+					$(".nav_list").append(data87);
+				}else if($(this).attr('data-id')=='7' ){
+					$(".nav_list").append(data88);
+				}else if($(this).attr('data-id')=='8' ){
+					$(".nav_list").append(data89);
+				}else if($(this).attr('data-id')=='9' ){
+					$(".nav_list").append(data90);
+				}else if($(this).attr('data-id')=='10' ){
+					$(".nav_list").append(data91);
+				}else if($(this).attr('data-id')=='11' ){
+					$(".nav_list").append(data92);
+				}
+			}
+			// $(".details").css("display","block")
+		})
+		// 攻略返回
+		$(".strategy_return").click(function(){
+			var scrollTop2 = localStorage.getItem('scrollTop');
+		        $(window).scrollTop(scrollTop2)
+			$(".center").css("display","block")
+			page = false;
+			// $(".strategy_mask").css("animation","animatename 0.8s")
+			// $(".strategy_mask").css("display","block")
+			// $(".center").css("display","none")
+			$(".strategy_mask").animate({left:'100%'},"500",function(){
+
+	            $(".strategy_mask").css("display","none");
+	            $(".strategy_mask").animate({left:'0%'})
+	            $(".strategy_list li").remove()
+
+	            $(".strategy_mask").css("animation-name","animatename")
+				$(".strategy_mask").css("animation-duration",".8s")
+
+        	})
+		})
+		function addImg(src,page){
+
+			// $(".details").css("overflow-y","auto")
+			$(".details .nav_center .nav_list img").remove();
+			if(page == undefined){
+				page = '';
+			}else{
+				page = page
+			}
+			var data = '';
+				data += '<img src="'+src+'" alt="">'
+				data += page;
+			$(".nav_list").append(data);
+			$(".details").css("display","block")
+			$(".center").css("display","none")
+			// $(".details").css("display","block")
+		}
+		// 强力BOSS
+		$(".bossImg1").click(function(){
+			$(".nav_tlt").text('祖玛教主')
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			var src = './images/boss/1.png';
+			var data = '';
+				data += '<p class="color6">祖玛教主</p>'
+				data += '<p>玛法大陆的三大教主之一，雄才大略的祖玛教主。他热爱自己的族人，以振兴祖玛教为己任。在人类和半兽人数百年的战争中，祖玛教一直处于中立状态，两不相帮。但老谋深算的赤月恶魔不会放过如此强有力的帮手，在他的引诱下，祖玛教主喝下‘能增强力量’的恶魔之血，如今在他空空如也的头脑中，除了杀戮已经不剩下任何东西了……</p>'
+				data += '<p class="color6">祖玛教主：<span class="color_r">四星</span></p>'
+				data += '<p class="color6">出没地点：<span class="color_b">祖玛寺庙</span></p></p>'
+				data += '<p class="color6">物品掉落：</p>'
+				data += '<p class="color_y">裁决、骨玉、龙纹剑、战神盔甲级别衣服、祖玛级别饰品、井中月、血饮、无极棍、顶级魔法书、魔血套组件、虹魔套组件、黑铁头盔、祝福油、祖玛头像等。</p>'
+			addImg(src,data)
+			$(".nav_list img").css("width","60%")
+		})
+		$(".bossImg2").click(function(){
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			$(".nav_tlt").text('双头血魔')
+			var src = './images/boss/2.png';
+			var data = '';
+				data += '<p class="color6">双头血魔</p>'
+				data += '<p>不知是生吞了多少活人，这只双头血魔浑身散发出令人胆寒的血腥之气，但它似乎保留着一些曾为人类时的记忆，在无人可吃的时候呆呆发怔，抚摸着自己两只又光又圆的怪头喃喃自语道：西瓜……</p>'
+				data += '<p class="color6">祖玛教主：<span class="color_r">三星</span></p>'
+				data += '<p class="color6">出没地点：<span class="color_b">金刚殿</span></p></p>'
+				data += '<p class="color6">物品掉落：</p>'
+				data += '<p class="color_y">裁决、骨玉、龙纹剑、战神盔甲级别衣服、祖玛级别饰品、井中月、血饮、无极棍、顶级魔法书、魔血套组件、虹魔套组件、黑铁头盔、祝福油、祖玛头像等</p>'
+			addImg(src,data)
+			$(".nav_list img").css("width","60%")
+		})
+		$(".bossImg3").click(function(){
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			$(".nav_tlt").text('双头金刚')
+			var src = './images/boss/3.png';
+			var data = '';
+				data += '<p class="color6">双头金刚</p>'
+				data += '<p>天生自带盔甲，一身皮肉坚韧无比，虽然长了两只脑袋却毫无智商可言，最喜欢看到东西在自己面前碎裂，如果不是自行碎裂，便是经由它铁钳一般的双手。</p>'
+				data += '<p class="color6">祖玛教主：<span class="color_r">三星</span></p>'
+				data += '<p class="color6">出没地点：<span class="color_b">金刚殿</span></p></p>'
+				data += '<p class="color6">物品掉落：</p>'
+				data += '<p class="color_y">赤月级首饰、井中月、赤影、血饮、无极棍、战神盔甲级别衣服、沃玛级别饰品、炼狱、追魂、魔杖、银蛇、次顶级魔法书、顶级魔法书、祈祷套组件、魔血套组件、虹魔套组件、黑铁头盔、祝福油等。</p>'
+			addImg(src,data)
+			$(".nav_list img").css("width","60%")
+		})
+		$(".bossImg4").click(function(){
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			$(".nav_tlt").text('尸王')
+			var src = './images/boss/4.png';
+			var data = '';
+				data += '<p class="color6">尸王</p>'
+				data += '<p>来历成迷的尸王，当年为追赶逃亡的虹魔教主误入幽冥海的比奇老城主之子。被苍月神女所救后被她惊世骇俗的美貌所吸引，急切的表明了自己的身份及非她不娶的信念。然而苍月神女拒绝了他。他偏执的认为是自己不够强大于是决心独自挑战赤月恶魔...直到二十年后，苍月岛上，一个身形彪悍，相貌丑陋，不能人言的尸王出现了...</p>'
+				data += '<p class="color6">祖玛教主：<span class="color_r">五星</span></p>'
+				data += '<p class="color6">出没地点：<span class="color_b">苍月岛</span></p></p>'
+				data += '<p class="color6">物品掉落：</p>'
+				data += '<p class="color_y">开天、破天、玄天、镇天之一、苍月级别首饰之一、爆炎剑诀级技能书、凤凰级别衣服之一、雷霆级别腰带宝图之一、裁决级武器、赤月级首饰之一、逐日剑法级技能书卷轴之一、祖玛级装备、魔法盾级技能书、祝福油；尸王之血（可用于完成史诗任务及兑换装备宝图）</p>'
+			addImg(src,data)
+			$(".nav_list img").css("width","60%")
+		})
+		$(".bossImg5").click(function(){
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			$(".nav_tlt").text('魔龙教主')
+			var src = './images/boss/5.png';
+			var data = '';
+				data += '<p class="color6">魔龙教主</p>'
+				data += '<p>魔龙城昔日德高望重的大长老，在魔龙岭三条神龙堕落为魔龙之后，仍不愿放弃信仰，饮下魔龙之血，甘愿成为魔龙永世的仆从。</p>'
+				data += '<p class="color6">祖玛教主：<span class="color_r">三星</span></p>'
+				data += '<p class="color6">出没地点：<span class="color_b">赤月魔穴</span></p></p>'
+				data += '<p class="color6">物品掉落：</p>'
+				data += '<p class="color_y">47级技能书卷轴（战士-逐日剑法卷轴、法师-流星火雨卷轴、道士-噬血术卷轴、刺客-火镰狂舞卷轴）、赤月级衣服（如：天魔神甲）、赤月级头盔（如：圣战头盔）、裁决、龙爪手、骨玉、龙纹剑、战神盔甲级别衣服、圣战级别饰品、祖玛级别饰品、特殊效果饰品、井中月、赤影、血饮、无极棍、顶级魔法书、魔血套组件、虹魔套组件、黑铁头盔等。</p>'
+			addImg(src,data)
+			$(".nav_list img").css("width","60%")
+		})
+		$(".bossImg6").click(function(){
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			$(".nav_tlt").text('触龙神')
+			var src = './images/boss/6.png';
+			var data = '';
+				data += '<p class="color6">触龙神</p>'
+				data += '<p>触龙神并非龙族，而是蜈蚣洞中遭到黑暗侵蚀，而膨胀变异的邪恶蜈蚣。当超过二十丈高的庞然大物突兀地破土而出，百足挥舞，狰狞之状让天地为之变色。触龙神的存在，给闯入蜈 蚣洞寻宝的英雄们增添了更大的困难，法术对它造成的伤害微乎其微，幸而战士的刀斧尚 能大显神威。</p>'
+				data += '<p class="color6">祖玛教主：<span class="color_r">三星</span></p>'
+				data += '<p class="color6">出没地点：<span class="color_b">死亡峡谷</span></p></p>'
+				data += '<p class="color6">物品掉落：</p>'
+				data += '<p class="color_y">赤月级首饰、井中月、赤影、血饮、无极棍、战神盔甲级别衣服、沃玛级别饰品、炼狱、追魂、魔杖、银蛇、次顶级魔法书、顶级魔法书、祈祷套组件、魔血套组件、虹魔套组件、黑铁头盔、祝福油等</p>'
+			addImg(src,data)
+			$(".nav_list img").css("width","60%")
+		})
+		// 精美地图
+		$(".maps1").click(function(){
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			$(".nav_tlt").text('热血战场')
+			var src = './images/maps/1.png';
+			var data = '';
+				data += '<p class="color6">热血战场</p>'
+				data += '<p>玛法大陆上，再没有哪个地方能比热血战场更恐怖了，无论是白天还是夜晚，长长上空永远只有一轮血红的月亮，像一只渴望鲜血的恶魔之眼逼视着战场中的一切生物，这里遍布魔蛛、变异巨人，并疯狂地繁衍着，带着瘟疫瘴气迅速侵蚀着周围的大地。这里有着无数的玩家在此处争夺各种boss。</p>'
+				data += '<p class="color_r">Boss：战场恶魔</p>'
+			addImg(src,data)
+		})
+		$(".maps2").click(function(){
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			$(".nav_tlt").text('火龙神殿')
+			var src = './images/maps/2.png';
+			var data = '';
+				data += '<p class="color6">火龙神殿</p>'
+				data += '<p>翻越盟重沙漠东南部的山脉，便可进入名为“火龙神殿”的殿堂。传说在英雄纪元时，此地居住三条神龙。然而，随着玛法大陆陷入纷争，魔气摧毁了原本神迹一般的山岭，高大的神庙坍塌为废墟，神龙也堕落为如今的魔龙。</p>'
+				data += '<p class="color_r">Boss：火龙王 火龙守卫</p>'
+			addImg(src,data)
+		})
+		$(".maps3").click(function(){
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			$(".nav_tlt").text('迷失大路')
+			var src = './images/maps/3.png';
+			var data = '';
+				data += '<p class="color6">迷失大陆</p>'
+				data += '<p>很久以前，先民尚未领悟五龙卫之力，无法抵御半兽人，只能节节败退，一直来到大陆的最南端。他们以此为根据地，展开最后的反攻，最终将半兽人全部驱逐，为了纪念此地，便取名为‘迷失大陆’。</p>'
+				data += '<p class="color_r">Boss：困惑魔王</p>'
+			addImg(src,data)
+		})
+		// 绝世神兵
+		$(".weapon1").click(function(){
+			console.log(data_scrollTop)
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			$(".nav_tlt").text('创世刀')
+			$(".nav_center").css("display","none")
+			time = setInterval(function(){
+				var url = './images/rare/r1_'
+				myanimation(url,7,data)
+			},100)
+			var time2 = setInterval(function(){
+				var data = '';
+					data += '<li>'
+					data += '<p class="color6">创世刀</p>'
+					data += '<p>昔日龙卫对抗神殿火龙所用的武器，采用神龙帝国秘术，以极地寒铁铸炼而成，不但拥有强大的攻击力，更隐藏着强大的上古力量，唯有强者才配持有它！</p>'
+					data += '<p class="color_r">技能：消耗一定魔法值，释放剑阵对范围内的所有敌人造成一定伤害（伤害量由释放者攻击高低所决定），技能使用间隔5分钟。</p>'
+					data += '</li>'
+					// $(".details").css("overflow-y","auto")
+					$(".details .nav_center li").remove();
+					$(".nav_center").append(data);
+					// $(".details").css("display","block")
+					$(".nav_center li").css("display","block")
+					$(".nav_center").css("display","block")
+
+					clearInterval(time2)
+			},1000)
+		})
+		$(".weapon2").click(function(){
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			$(".nav_tlt").text('创世剑')
+			$(".nav_center").css("display","none")
+			time = setInterval(function(){
+				var url = './images/rare/r2_'
+				myanimation(url,7,data)
+			},100)
+			var time2 = setInterval(function(){
+				var data = '';
+					data += '<li>'
+					data += '<p class="color6">创世剑</p>'
+					data += '<p>《神兵谱》如此记载着：“要铸就创世剑，必先饱尝鲜血”。因铸造之法极为邪恶，龙卫圣战明令禁止打造此剑。而自创世刀下落不明、火龙再现后，创世剑终重现于世。</p>'
+					data += '<p class="color_r">技能：攻击时有一定几率吸取敌方鲜血。</p>'
+					data += '</li>'
+					// $(".details").css("overflow-y","auto")
+					$(".details .nav_center li").remove();
+					$(".nav_center").append(data);
+					// $(".details").css("display","block")
+					$(".nav_center li").css("display","block")
+					$(".nav_center").css("display","block")
+					clearInterval(time2)
+			},1000)
+		})
+		$(".weapon3").click(function(){
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			$(".nav_tlt").text('创世杖')
+			$(".nav_center").css("display","none")
+			time = setInterval(function(){
+				var url = './images/rare/r3_'
+				myanimation(url,7)
+			},100)
+			var data = '';
+			var time2 = setInterval(function(){
+				data += '<li>'
+				data += '<p class="color6">创世杖</p>'
+				data += '<p>一出世就击杀了虹魔教主的神兵利器，但它随后便令持有者陷入了疯狂，杀人无数。五龙卫出手方让玛法大陆免于灾难。神兵伏主，意志不坚者无法拥有它。</p>'
+				data += '<p class="color_r">技能：提高所有魔法伤害及治疗效果。</p>'
+				data += '</li>'
+				// $(".details").css("overflow-y","auto")
+				$(".details .nav_center li").remove();
+				$(".nav_center").append(data);
+				// $(".details").css("display","block")
+				$(".nav_center li").css("display","block")
+				$(".nav_center").css("display","block")
+				clearInterval(time2)
+			},1000)
+		})
+		function myanimation(url,number,data){
+			i++;
+			if(i<number){
+				src = url+i+'.png';
+				addImg(src)
+			}else{
+				i=0;
+				// src = './images/ring/3.png';
+			}
+		}
+		//极品神戒
+		$(".ring1").click(function(){
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			$(".nav_tlt").text('神盾戒指')
+			$(".nav_center").css("display","none")
+			var src = '';
+			var data = '';
+			time = setInterval(function(){
+				var url = './images/ring/1_'
+				myanimation(url,9)
+			},100)
+			var time2 = setTimeout(function(){
+				data += '<li>'
+				data += '<p class="color6">神盾戒指</p>'
+				data += '<p>世人常将它和护身戒指混淆，但它的作用似乎更神奇一些。佩戴者可以使用神盾护体技能，抵挡住致命伤害。</p>'
+				data += '<p class="color_r">技能：可释放神盾护体，10秒钟内所收到的伤害降低30%，冷却1分钟。</p>'
+				data += '</li>'
+				// $(".details").css("overflow-y","auto")
+				$(".details .nav_center li").remove();
+				$(".nav_center").append(data);
+				// $(".details").css("display","block")
+				$(".nav_center li").css("display","block")
+				$(".nav_center").css("display","block")
+				clearInterval(time2)
+			},1000)
+		})
+		var i = 0;
+		var time;
+		$(".ring2").click(function(){
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			$(".nav_tlt").text('幻舞戒指')
+			$(".nav_center").css("display","none")
+			var src = '';
+			var data = '';
+			time = setInterval(function(){
+				var url = './images/ring/2_'
+				myanimation(url,9)
+			},100)
+			var time2 = setInterval(function(){
+				data += '<li>'
+				data += '<p class="color6">幻舞戒指</p>'
+				data += '<p>就像被密封起来的狂风，它将提高佩戴者的攻击速度。佩戴者可以使用幻舞之影技能，大幅提高攻击及施法速度。</p>'
+				data += '<p class="color_r">技能：可释放幻舞之影，10秒钟内提高攻击及施法速度30%，冷却1分钟。</p>'
+				data += '</li>'
+				// $(".details").css("overflow-y","auto")
+				$(".details .nav_center li").remove();
+				$(".nav_center").append(data);
+				// $(".details").css("display","block")
+				$(".nav_center li").css("display","block")
+				$(".nav_center").css("display","block")
+				clearInterval(time2)
+			},1000)
+		})
+
+		$(".ring3").click(function(){
+			localStorage.setItem('scrollTop', JSON.stringify(data_scrollTop));
+			$(".nav_tlt").text('护身戒指')
+			$(".nav_center").css("display","none")
+			var src = '';
+			var data = '';
+			time = setInterval(function(){
+				var url = './images/ring/3_'
+				myanimation(url,9)
+			},100)
+			var time2 = setInterval(function(){
+				data += '<li>'
+				data += '<p class="color6">护身戒指</p>'
+				data += '<p>它确实能抵挡伤害，但相应的也要付出一定的代价。佩戴者可消耗魔法来抵挡所承受的伤害，抵挡值视戒指等级而定。</p>'
+				data += '<p class="color_r">技能：可释魔法护身，消耗1点魔法来抵挡1点伤害，无冷却，魔法为空后不生效。</p>'
+				data += '</li>'
+				// $(".details").css("overflow-y","auto")
+				$(".details .nav_center li").remove();
+				$(".nav_center").append(data);
+				// $(".details").css("display","block")
+				$(".nav_center li").css("display","block")
+				$(".nav_center").css("display","block")
+				clearInterval(time2)
+			},1000)
+		})
+
+    })
+</script>
+</html>
